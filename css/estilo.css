@@ -150,6 +150,7 @@ header#cabecalho-artigo h2{
 	color: cecece;
 	background-color: white;
 	margin-bottom: 0px;
+	
 }
 header#cabecalho-artigo h3{
 	font-size: 12px;
@@ -164,6 +165,10 @@ section#corpo {
 	float: left;
 	border-right: 1px solid #606060;
 	padding-right: 15px;
+	padding: 5px;
+}
+section#corpo h2{
+	padding: 5px;
 }
 table#tabelaspec {
 	border: 1px solid #606060;
