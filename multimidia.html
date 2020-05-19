@@ -1,25 +1,69 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html/
+<html lang="pt-br">
+<head>
+	<title>Tudo Sobre Google Glass</title>
+	<link rel="stylesheet" href="css/estilo.css"/>
+	<link rel="stylesheet" href="css/media.css"/>
+</head>
+<script src="javascript/funcoes.js"></script>
+<body>
 
-[AQUI ENTRA UMA FOTO]
+<div id="interface">
+	
+	<header id="cabecalho">
+	
+	<hgroup>
+	<h1>Google Glass</h1>
+	<h2>A revolução do google está chegando!</h2>
+	</hgroup>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+<img id="icone" src="imagens/multimidia.png"/>
 
-Glass > Multimídia
-Sons e Vídeos
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+	<nav id="menu">
+	<h1>Menu Principal</h1>
+	<ul>
+		<li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/multimidia.png')"><a href="index.html">Home</a></li>
+		<li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+		<li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/multimidia.png')"><a href="fotos.html">Fotos</a></li>
+		<li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+		<li onmouseover="mudaFoto('imagens/icone-contato.png')" onmouseout="mudaFoto('imagens/multimidia.png')"><a href="fale-conosco.html">Fale Conosco</a></li>
+	</ul>
+	</nav>
+	</header>
+	
+<section id="corpo-full">
+<article id="noticia-principal">
+<header id="cabecalho-artigo">
+<hgroup>
+<h3>Glass > Multimídia</h3>
+<h1>Sons e Vídeos</h1>
+<h2>por Gustavo Guanabara</h2>
+<h3 class="direita">Atualizado em 01/Maio/2013</h3>
+</hgroup>
+</header>
 
+<div id="tv-radio"> 
+<audio id="musica" controls="controls">
+<source src="media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+<source src="media/2009-lovers-carvings-bibio.m4a" type="audio/x-acc"/>
+<source src="media/2009-lovers-carvings-bibio.ogg" type="audio/ogg"/>
+Desculpe, mas não foi possível carregar o áudio.
+</audio>
+<video id="filme" controls="controls" poster="imagens/video-mini03.jpg">
+<source src="media/getting-started.mp4" type="video/mp4"/>
+<source src="media/getting-started.webm" type="video/webm"/>
+<source src="media/getting-started.ogv" type="video/ogg"/>
+Desculpe, mas não foi possível carregar o vídeo.
+</video>
+</div>
+</article>
+</section>
 
-Áudio e Vídeo
+<footer id="rodape">
+<p>&copy Copyright 2020 - by Eberthyn Marques<br/>
+<a href="http://facebook.com/eberthyn.marques" target="_blank">Facebook</a> | <a href="http://linkedin.com/in/eberthyn-marques" target="_blank">Linkedin</a></p>
+</footer>
 
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
-
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+</div>
+</body>
+</html>
