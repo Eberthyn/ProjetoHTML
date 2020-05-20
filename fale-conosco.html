@@ -42,7 +42,7 @@
 </hgroup>
 </header>
 
-<form>
+<form method="post" id="fContato" action="mailto:eberthyn@gmail.com">
 <fieldset id="usuario">
 <legend>Identificação do Usuário</legend>
     <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
@@ -57,15 +57,32 @@
 </fieldset>
 <fieldset id="endereco">
 <legend>Endereço do Usuário</legend>
-    <p>Logradouro:</p> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua"/>
-    <p>Número:</p><input type="number" name="tNum" id="cNum" min="0"max="99999"/>
-    <p>Estado:</p><input type="" name="t" id="c" size="" maxlength="" placeholder=""/>
-    <p>Cidade:</p><input type="" name="t" id="c" size="" maxlength="" placeholder=""/>
+    <p><label for="cRua">Logradouro:</label></p> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua,Av,Quadra"/>
+    <p><label for="cNum">Número:</label></p><input type="number" name="tNum" id="cNum" min="0"max="99999"/>
+    <p><label for="cEst">Estado:</label></p><select name="tEst" id="cEst">
+	<optgroup label="Regiao Sudeste"><option value="RJ">Rio de Janeiro</option>
+	<option value="SP">São Paulo</option>
+	<option value="MG">Minas Gerais</option></optgroup>
+	<optgroup label="Região Centro-Oeste"><option value="DF" selected>Distrito Federal</option></optgroup>
+	<optgroup label="Região Sul"><option value="RS">Rio Grande do Sul</option>
+	<option value="SC">Santa Catarina</option></optgroup>
+	
+	</select>
+    <p><label for="cCid">Cidade:</label></p><input type="" name="tCid" id="cCid" size="20" maxlength="30" placeholder="Sua Cidade" list="cidades"/>
+	<datalist id="cidades">
+		<option value="Rio de Janeiro"></option>
+		<option value="Nova Iguaçu"></option>
+		<option value="Niterói"></option>
+		<option value="Volta Redonda"></option>
+	</datalist>
+		
 </fieldset>
 <fieldset id="mensagem">
 <legend>Mensagem do Usuário</legend>
-    Grau de Urgência:
-    Mensagem:
+    <p><label for="cUrg">Grau de Urgência:</p></label>
+	Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx
+    <p><label for="cMsg">Mensagem:</p></label>
+	<textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
 </fieldset>
 <fieldset id="pedido">
 <legend>Quero um Google Glass</legend>
