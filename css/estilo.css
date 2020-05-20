@@ -147,7 +147,7 @@ text-align: right;
 }
 header#cabecalho-artigo h2{
 	font-size: 13pt;
-	color: cecece;
+	color: #cecece;
 	background-color: white;
 	margin-bottom: 0px;
 	
@@ -212,7 +212,14 @@ aside#lateral {
 	padding: 10px;
 	margin-top: 10px;
 	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
-	
+}
+video#filme2 {
+	display: block;
+	position: relative;
+	left: 0px;
+	top: -15px;
+	width: 350px;
+	height:250px;
 }
 aside#lateral h1{
 	font-family: 'FonteLogo', sans-serif;
